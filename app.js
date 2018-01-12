@@ -25,7 +25,8 @@ var authRoutes       = require("./routes/index");
 
 mongoose.Promise = global.Promise;
 
-var databaseUri = "mongodb://localhost/yelp_camp";
+//var databaseUri = "mongodb://localhost/yelp_camp";
+var databaseUri = "mongodb://aniela:Benedetto16@ds247407.mlab.com:47407/yelpcamp_aniela";
 mongoose.connect(databaseUri, { useMongoClient: true })
       .then(() => console.log(`Database connected at ${databaseUri}`))
       .catch(err => console.log(`Database connection error: ${err.message}`));
